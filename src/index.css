@@ -22,3 +22,49 @@ code {
   'Courier New',
   monospace;
 }
+
+.home {
+
+  padding-top: 0.1px;
+  background: linear-gradient(#8e59f79d 0%, #8e59f7 100%), url('./assets/images/office.png') ;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  height: 500px;
+}
+
+#my-avatar {
+  margin-top: 100px;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;  
+}
+
+.intro {
+  width: 250px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+}
+
+.text {
+  color: #fff;
+  line-height: 4px;
+}
+
+.hire {
+  background-color: #ecf0fb;
+  border: none;
+  width: 130px;
+  height: 30px;
+  font-size: 18px;
+  color: #8e59f7;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+.name {
+  font-size: 26px;
+}
