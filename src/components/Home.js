@@ -10,7 +10,7 @@ export default class Home extends React.Component {
   render () {
     return (
      <div className="home">
-       <Menu right width={ 200 }>
+       <Menu right width={ 250 }>
         <a className="menu-item" href="#home">Home</a>
         <a className="menu-item" href="#about">About</a>
         <a className="menu-item" href="#project">Projects</a>
