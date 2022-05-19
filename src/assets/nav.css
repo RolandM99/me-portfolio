@@ -20,15 +20,15 @@
 
 /* Position and sizing of clickable cross button */
 .bm-cross-button {
-  height: 36px;
-  width: 36px;
+  font-size: 36px;
+  margin-right: 36px;
+  margin-top: 36px;
+
 }
 
 /* Color/shape of close button cross */
 .bm-cross {
   background: #bdc3c7;
-  height: 36px;
-  width: 36px;
 }
 
 /*
@@ -40,20 +40,23 @@ div .bm-morph-shape {
 }
 .bm-menu-wrap {
   position: fixed;
-  height: 100%;
 }
 
 /* General sidebar styles */
 .bm-menu {
-  margin-top: 20px;
+  margin: 80px 0 0 80px;
   text-decoration: none;
-  padding: 2.8em 3em 0;
-  font-size: 1.5em;
+  font-size: 36px;
+}
+
+#react-burger-cross-btn {
+  font-size: 50px;
 }
 
 /* Morph shape necessary with bubble or elastic */
 .bm-morph-shape {
-  fill: #373a47c5;
+  fill: #2e273b70;
+  width: 100%;
 }
 
 /* Wrapper for item list */
