@@ -4,6 +4,7 @@ import { bubble as Menu } from 'react-burger-menu';
 import avatar from '../assets/images/Ellipse.png';
 import { FaAngellist } from 'react-icons/fa';
 import resume from '../assets/Resume.pdf';
+import { HashLink as Link } from 'react-router-hash-link';
 import {
   BsInstagram,
   BsLinkedin,
@@ -19,12 +20,14 @@ export default class Home extends React.Component {
 
   render () {
     return (
+    <>
+    <div className="main">
      <div className="home">
        <Menu className="my-bar" right width={ "100%" }>
-        <a className="menu-item" href="#home">Home</a>
-        <a className="menu-item" href="#about">About</a>
-        <a className="menu-item" href="#project">Projects</a>
-        <a className="menu-item" href="#contact">Contact</a>
+        <li className="menu-item"><Link smooth to="portfolio#home-page">Home</Link></li>
+        <li className="menu-item"><Link smooth to="portfolio#project-page">Projects</Link></li>
+        <li className="menu-item"><Link smooth to="portfolio#about-page">About</Link></li>
+        <li className="menu-item"><Link smooth to="portfolio#contact-page">Contacts</Link></li>
       </Menu>
       <div className="social-media">
         <ul className="my-social">
@@ -87,6 +90,8 @@ export default class Home extends React.Component {
            </div>
          </div>
      </div>
+    </div>
+    </>
     );
   }
 }
