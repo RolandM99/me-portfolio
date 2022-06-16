@@ -2,13 +2,15 @@
 
 body {
   margin: 0;
+  position: absolute;
   height: 100%;
   font-family: 'Montserrat', sans-serif;
-  background-color: #ecf0fb;
+  background-color: #ecf0fb8c;
 }
 
 .App {
   height: 100%;
+  width: 100%;
 }
 
 .home {
@@ -117,4 +119,11 @@ body {
   margin-top: 50px;
   display: flex;
   flex-direction: column;
+}
+
+@media (min-width: 504px) {
+  body {
+    margin: 0;
+    width: 100%;
+  }
 }
