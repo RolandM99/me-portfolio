@@ -1,0 +1,47 @@
+.line1 {
+  margin: 70px auto 40px;
+  width: 80%;
+  align-items: center;
+}
+
+.abt-box {
+  margin: 0 50px;
+}
+
+.intro-txt {
+  font-size: 24px;
+  font-weight: bold;
+  color: #8e59f7;
+}
+
+.abt-txt {
+  font-size: 20px;
+  color: #2e273bb9;
+  font-weight: 500;
+}
+
+.icon-li {
+  list-style-type: none;
+  display: flex;
+  gap: 5px;
+}
+
+.abt-skills h2 {
+  margin-left: 50px;
+  color: #8e59f7;
+  font-weight: bold;
+}
+
+.stacks {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 85%;
+}
+
+.icon-img {
+  width: 24px;
+  height: 24px;
+}

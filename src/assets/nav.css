@@ -1,9 +1,9 @@
 /* Position and sizing of burger button */
 .bm-burger-button {
   position: fixed;
-  width: 36px;
-  height: 30px;
-  right: 36px;
+  width: 16px;
+  height: 16px;
+  right: 50px;
   top: 36px;
 }
 
@@ -22,7 +22,7 @@
 .bm-cross-button {
   font-size: 36px;
   margin-right: 36px;
-  margin-top: 36px;
+  margin-top: 24px;
 
 }
 
