@@ -1,71 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system,
-  BlinkMacSystemFont,
-  'Segoe UI',
-  'Roboto',
-  'Oxygen',
-  'Ubuntu',
-  'Cantarell', 
-  'Fira Sans', 
-  'Droid Sans', 
-  'Helvetica Neue',sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  position: absolute;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #ecf0fb8c;
+  overflow-x: hidden;
 }
 
-code {
-  font-family: source-code-pro,
-  Menlo,
-  Monaco, 
-  Consolas,
-  'Courier New',
-  monospace;
+.App {
+  height: 100%;
+  width: 100%;
 }
 
 .home {
-
-  padding-top: 0.1px;
+  padding: 0.1px 0 120px 0;
   background: linear-gradient(#8e59f79d 0%, #8e59f7 100%), url('./assets/images/office.png') ;
   background-repeat: no-repeat;
   background-position-x: center;
-  height: 500px;
+  border-radius: 0 0 0 60px;
+}
+
+.social-media {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.my-social {
+  color: #2e273b70;
+  list-style-type: none;
+  margin: 180px 40px 0 0;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  font-size: 36px;
+}
+
+.my-social li a {
+  color: #2e273b70;
 }
 
 #my-avatar {
   margin-top: 100px;
   display: flex;
   margin-right: auto;
-  margin-left: auto;  
+  margin-left: auto;
 }
 
 .intro {
-  width: 250px;
+  width: 500px;
   text-align: center;
   display: flex;
   flex-direction: column;
-  margin-left: auto;
-  margin-right: auto;
   font-size: 20px;
+  margin: 35px auto 0 auto;;
+}
+
+.action {
+  margin-top: 50px;
+  display: flex;
+  width: 280px;
+  gap: 8px;
+  justify-content: space-between;
+}
+
+.download-icon {
+  font-size: 30px;
+}
+
+#resume {
+  display: flex;
+  width: 300px;
+  color: #fff;
 }
 
 .text {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
   color: #fff;
-  line-height: 4px;
+  line-height: 20px;
+}
+
+.hello {
+  text-align: left;
+  font-weight: bold;
+  font-size: 20px;
+  color: #fff;
+}
+
+.name {
+  font-size: 30px;
+  text-align: left;
+  font-weight: bolder;
+  color: #2e273b70;
+  width: 500px;
+}
+
+.role {
+  text-align: left;
+  font-size: 22px;
+  font-weight: bold;
 }
 
 .hire {
   padding-top: 2px;
-  background-color: #ecf0fb;
-  border: none;
-  width: 130px;
+  background-color: #2e273b70;
+  border: 1px solid #fff;
+  width: 90px;
   height: 30px;
   font-size: 18px;
-  color: #8e59f7;
-  border-radius: 10px;
+  color: #fff;
+  border-radius: 5px;
   font-weight: 700;
 }
 
-.name {
-  font-size: 26px;
+.description {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 504px) {
+  body {
+    margin: 0;
+    width: 100%;
+  }
 }
