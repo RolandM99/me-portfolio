@@ -1,4 +1,6 @@
 import React from 'react';
+import { IconContext } from 'react-icons/lib/esm/iconContext';
+import { BiDownload } from 'react-icons/bi';
 import js from '../assets/images/js.png';
 import ruby from '../assets/images/ruby.png';
 import rails from '../assets/images/rails.png';
@@ -8,6 +10,10 @@ import java from '../assets/images/java.png';
 import bootstrap from '../assets/images/bootstrap.png';
 import sass from '../assets/images/sass.png';
 import python from '../assets/images/python.png';
+import backend from '../assets/images/backend.png';
+import uiux from '../assets/images/uiux.png';
+import frontend from '../assets/images/frontend.png';
+import resume from '../assets/Resume.pdf';
 
 export default function About() {
   return (
@@ -21,6 +27,25 @@ export default function About() {
            <p className="abt-txt">I am Roland Mweze, a software engineer specialized in different technologies.
            I always wanted to pursue success in building meaningful
            things that help real people and solve real problems</p>
+          </div>
+          <div className="abt-offer">
+            <h2>What I offer</h2>
+            <p className="abt-txt">I Build scalable web apps and mobile apps, beautiful websites
+            for companies and I improve user interaction and customer satisfaction.</p>
+            <div className="offer">
+              <div className="abt-giv">
+                <img className="offer-img" src={frontend} alt="frontend-croquis"></img>
+                <p>Front-end Development</p>
+              </div>
+              <div className="abt-giv">
+                <img className="offer-img" src={backend} alt="backend-croquis"></img>
+                <p>Back-end Development</p>
+              </div>
+              <div className="abt-giv">
+                <img className="off-img" src={uiux} alt="ui-croquis"></img>
+                <p>UI/UX Design</p>
+              </div>
+            </div>
           </div>
           <div className="abt-skills">
            <h2>Skills</h2>
@@ -36,6 +61,17 @@ export default function About() {
             <li className="icon-li">Sass<img className="icon-img" src={sass} alt="ruby-icon"></img></li>
            </ul>
           </div>
+          <div className="abt-action">
+                <a href="#contact">
+                 <button className="abt-hire">Hire me</button>
+                </a>
+                <a href={resume} download id="abt-resume" className="download-cv">
+                Download CV
+                <IconContext.Provider value={{ className: 'download-icon' }}>
+                  <BiDownload />
+                </IconContext.Provider>
+              </a>
+             </div>
         </div>
       </section>
     </>

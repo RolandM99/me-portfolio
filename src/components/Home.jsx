@@ -21,13 +21,13 @@ export default class Home extends React.Component {
   render () {
     return (
     <>
-    <div className="main">
+    <div id="portfolio" className="main">
      <div className="home">
        <Menu className="my-bar" right width={ "100%" }>
-        <li className="menu-item"><Link smooth to="portfolio#home-page">Home</Link></li>
-        <li className="menu-item"><Link smooth to="portfolio#project-page">Projects</Link></li>
-        <li className="menu-item"><Link smooth to="portfolio#about-page">About</Link></li>
-        <li className="menu-item"><Link smooth to="portfolio#contact-page">Contacts</Link></li>
+        <li className="menu-item"><Link smooth to="#portfolio">Home</Link></li>
+        <li className="menu-item"><Link smooth to="#project-page">Projects</Link></li>
+        <li className="menu-item"><Link smooth to="#about-page">About</Link></li>
+        <li className="menu-item"><Link smooth to="#contact-page">Contacts</Link></li>
       </Menu>
       <div className="social-media">
         <ul className="my-social">
