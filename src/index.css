@@ -6,6 +6,7 @@ body {
   height: 100%;
   font-family: 'Montserrat', sans-serif;
   background-color: #ecf0fb8c;
+  overflow-x: hidden;
 }
 
 .App {
@@ -79,18 +80,18 @@ body {
   display: flex;
   flex-direction: column;
   color: #fff;
-  line-height: 24px;
+  line-height: 20px;
 }
 
 .hello {
   text-align: left;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 20px;
   color: #fff;
 }
 
 .name {
-  font-size: 40px;
+  font-size: 30px;
   text-align: left;
   font-weight: bolder;
   color: #2e273b70;
@@ -99,7 +100,7 @@ body {
 
 .role {
   text-align: left;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: bold;
 }
 

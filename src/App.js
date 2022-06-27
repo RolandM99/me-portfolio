@@ -2,6 +2,7 @@ import React from 'react';
 import Home from './components/Home';
 import Portfolio from './components/Portfolio';
 import About from './components/About';
+import Contact from './components/Contact';
 // import {
 //   BrowserRouter,
 //   Routes,
@@ -14,6 +15,7 @@ function App() {
       <Home />
       <Portfolio />
       <About />
+      <Contact />
     </div>
   );
 }
