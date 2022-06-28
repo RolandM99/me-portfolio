@@ -29,8 +29,8 @@ const Contact = () => {
      <hr className="line1"></hr>
      <h1 className="pro-title">Contact me<hr className="line2"></hr></h1>
      <div className="ctc-container">
-      <h2>Let's connect...</h2>
       <div>
+       <h2>Let's connect...</h2>
        <ul className="ctc-icons">
         <li className="ctc-li"><span className="span-li"><FaEnvelope/></span><a id="mail-li" href="mailto:manfulmweze99@gmail.com" rel="noreferrer" target="_blank">manfulmweze99@gmail.com</a></li>
         <li className="ctc-li"><span className="span-li"><FaMapMarkerAlt /></span> Rwanda, Kigali </li>
@@ -54,11 +54,11 @@ const Contact = () => {
           <li><a href="#about-page">About</a></li>
        </ul>
         <ul className="social-ctc">
-          <li><span><BsGithub/></span><a href=""></a></li>
-          <li><span><BsLinkedin/></span><a href=""></a></li>
-          <li><span><BsTwitter/></span><a href=""></a></li>
-          <li><span><FaAngellist/></span><a href=""></a></li>
-          <li><span><BsInstagram/></span><a href=""></a></li>
+          <li><a href="https://github.com/RolandM99"><span><BsGithub/></span></a></li>
+          <li><a href="https://www.linkedin.com/in/roland-mweze/"><span><BsLinkedin/></span></a></li>
+          <li><a href="https://twitter.com/ManfulMwez"><span><BsTwitter/></span></a></li>
+          <li><a href="https://angel.co/u/roland-n-mweze"><span><FaAngellist/></span></a></li>
+          <li><a href="https://www.instagram.com/roland_manful.1/"><span><BsInstagram/></span></a></li>
         </ul>
        </div>
       <hr className="line3"></hr>
