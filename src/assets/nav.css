@@ -77,3 +77,8 @@ div .bm-morph-shape {
 .bm-overlay {
   background: rgba(0, 0, 0, 0.3);
 }
+
+.menu-item a {
+  text-decoration: none;
+  color: #ecf0fb8c;
+}
