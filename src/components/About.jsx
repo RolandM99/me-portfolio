@@ -38,7 +38,7 @@ export default function About() {
                 <img className="offer-img" src={frontend} alt="frontend-croquis"></img>
                 <p>Front-end Development</p>
               </div>
-              <div className="abt-giv">
+              <div id="bck" className="abt-giv">
                 <img className="offer-img" src={backend} alt="backend-croquis"></img>
                 <p>Back-end Development</p>
               </div>

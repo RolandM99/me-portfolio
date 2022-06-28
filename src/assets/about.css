@@ -139,6 +139,14 @@
     flex-direction: row-reverse;
   }
 
+  #bck {
+    background-color: rgba(54, 36, 87, 0.849);
+  }
+
+  #bck:hover {
+    background-color: #8e59f7;
+  }
+
   .abt-skills {
     border-right: 2px solid #8e59f7;
   }
