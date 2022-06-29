@@ -28,6 +28,7 @@ export default function About() {
            I always wanted to pursue success in building meaningful
            things that help real people and solve real problems</p>
           </div>
+          <div className="offer-skills">
           <div className="abt-offer">
             <h2>What I offer</h2>
             <p className="abt-txt">I Build scalable web apps and mobile apps, beautiful websites
@@ -37,7 +38,7 @@ export default function About() {
                 <img className="offer-img" src={frontend} alt="frontend-croquis"></img>
                 <p>Front-end Development</p>
               </div>
-              <div className="abt-giv">
+              <div id="bck" className="abt-giv">
                 <img className="offer-img" src={backend} alt="backend-croquis"></img>
                 <p>Back-end Development</p>
               </div>
@@ -61,8 +62,9 @@ export default function About() {
             <li className="icon-li">Sass<img className="icon-img" src={sass} alt="ruby-icon"></img></li>
            </ul>
           </div>
+          </div>
           <div className="abt-action">
-                <a href="#contact">
+                <a href="#contact-page">
                  <button className="abt-hire">Hire me</button>
                 </a>
                 <a href={resume} download id="abt-resume" className="download-cv">

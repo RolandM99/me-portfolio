@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { IconContext } from 'react-icons';
 import { bubble as Menu } from 'react-burger-menu';
 import avatar from '../assets/images/Ellipse.png';
@@ -13,21 +13,28 @@ import {
 } from 'react-icons/bs';
 import { HiOutlineDocumentDownload } from 'react-icons/hi';
 
-export default class Home extends React.Component {
-  showSettings (event) {
-    event.preventDefault();
-  }
+const Home = () => {
+  // showSettings (event) {
+  //   event.preventDefault();
+  // }
 
-  render () {
+   const [isMenuOpen, setIsMenuOpen] = useState(false);
+   const handleCloseMenu = () => {
+     setIsMenuOpen(false);
+   };
+   const handleStateChange = (state) => {
+     setIsMenuOpen(state.isOpen);
+   }
+
     return (
     <>
     <div id="portfolio" className="main">
      <div className="home">
-       <Menu className="my-bar" right width={ "100%" }>
-        <li className="menu-item"><Link smooth to="#portfolio">Home</Link></li>
-        <li className="menu-item"><Link smooth to="#project-page">Projects</Link></li>
-        <li className="menu-item"><Link smooth to="#about-page">About</Link></li>
-        <li className="menu-item"><Link smooth to="#contact-page">Contacts</Link></li>
+       <Menu isOpen={isMenuOpen} onStateChange={handleStateChange} className="my-bar" right width={ "100%" }>
+        <li className="menu-item" onClick={() => handleCloseMenu()} ><Link smooth to="#portfolio">Home</Link></li>
+        <li className="menu-item" onClick={() => handleCloseMenu()}  ><Link smooth to="#project-page">Projects</Link></li>
+        <li className="menu-item" onClick={() => handleCloseMenu()}  ><Link smooth to="#about-page">About</Link></li>
+        <li className="menu-item" onClick={() => handleCloseMenu()}  ><Link smooth to="#contact-page">Contacts</Link></li>
       </Menu>
       <div className="social-media">
         <ul className="my-social">
@@ -39,14 +46,14 @@ export default class Home extends React.Component {
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="https://www.instagram.com/roland_manful.1/">
               <IconContext.Provider value={{ className: 'sidebar-link-icon' }}>
                 <BsInstagram />
               </IconContext.Provider>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="https://twitter.com/ManfulMwez">
               <IconContext.Provider value={{ className: 'sidebar-link-icon' }}>
                 <BsTwitter />
               </IconContext.Provider>
@@ -60,7 +67,7 @@ export default class Home extends React.Component {
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="https://angel.co/u/roland-n-mweze">
               <IconContext.Provider value={{ className: 'sidebar-link-icon' }}>
                 <FaAngellist />
               </IconContext.Provider>
@@ -70,14 +77,8 @@ export default class Home extends React.Component {
       </div>
          <div className="description">
            <img id="my-avatar" src ={avatar} alt="my avatar" />
-           <div className="intro">
-             <div className="text">
-               <p className="hello">Hello there,</p>
-               <p className="name">I am <strong>Roland MWEZE</strong></p>
-               <p className="role">Software Engineer</p>
-             </div>
-             <div className="action">
-                <a href="#contact">
+           <div className="action">
+                <a href="#contact-page">
                  <button className="hire">Hire me</button>
                 </a>
                 <a href={resume} download id="resume" className="download-cv">
@@ -87,6 +88,13 @@ export default class Home extends React.Component {
                 </IconContext.Provider>
               </a>
              </div>
+           <div className="intro">
+             <div className="text">
+               <p className="hello">Hello there,</p>
+               <p className="name">I am <strong>Roland MWEZE</strong></p>
+               <p className="role">Software Engineer</p>
+             </div>
+             
            </div>
          </div>
      </div>
@@ -94,4 +102,5 @@ export default class Home extends React.Component {
     </>
     );
   }
-}
+
+export default Home;

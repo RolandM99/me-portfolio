@@ -15,11 +15,11 @@ body {
 }
 
 .home {
-  padding: 0.1px 0 120px 0;
   background: linear-gradient(#8e59f79d 0%, #8e59f7 100%), url('./assets/images/office.png') ;
   background-repeat: no-repeat;
   background-position-x: center;
   border-radius: 0 0 0 60px;
+  padding-bottom: 120px;
 }
 
 .social-media {
@@ -41,6 +41,10 @@ body {
   color: #2e273b70;
 }
 
+.my-social li a:hover {
+  color: #ecf0fb8c;
+}
+
 #my-avatar {
   margin-top: 100px;
   display: flex;
@@ -51,18 +55,18 @@ body {
 .intro {
   width: 500px;
   text-align: center;
-  display: flex;
   flex-direction: column;
   font-size: 20px;
-  margin: 35px auto 0 auto;;
+  margin-top: -350px;
 }
 
 .action {
-  margin-top: 50px;
+  margin: auto;
   display: flex;
   width: 280px;
   gap: 8px;
   justify-content: space-between;
+  padding: 215px 0 140px;
 }
 
 .download-icon {
@@ -73,6 +77,10 @@ body {
   display: flex;
   width: 300px;
   color: #fff;
+}
+
+#resume:hover {
+  color: #ecf0fb8c;
 }
 
 .text {
@@ -88,6 +96,7 @@ body {
   font-weight: bold;
   font-size: 20px;
   color: #fff;
+  margin: 20px 40px;
 }
 
 .name {
@@ -95,13 +104,16 @@ body {
   text-align: left;
   font-weight: bolder;
   color: #2e273b70;
-  width: 500px;
+  width: 400px;
+  margin: 0 40px;
 }
 
 .role {
   text-align: left;
   font-size: 22px;
   font-weight: bold;
+  margin: 20px 40px;
+  width: 300px;
 }
 
 .hire {
@@ -116,15 +128,24 @@ body {
   font-weight: 700;
 }
 
+.hire:hover {
+  background-color: #ecf0fb8c;
+  color: #8e59f7;
+}
+
 .description {
   margin-top: 50px;
   display: flex;
   flex-direction: column;
 }
 
-@media (min-width: 504px) {
+@media (min-width: 768px) {
   body {
     margin: 0;
     width: 100%;
+  }
+
+  .action {
+    margin: auto;
   }
 }

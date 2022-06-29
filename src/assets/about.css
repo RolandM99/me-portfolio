@@ -26,12 +26,14 @@
 
 .abt-txt {
   font-size: 20px;
-  color: #2e273bb9;
+  color: rgba(54, 36, 87, 0.849);
   font-weight: 500;
 }
 
 .icon-li {
   list-style-type: none;
+  font-weight: 600;
+  color: rgba(54, 36, 87, 0.849);
   display: flex;
   gap: 5px;
 }
@@ -40,6 +42,7 @@
   margin-left: 50px;
   color: #8e59f7;
   font-weight: bold;
+  font-size: 24px;
 }
 
 .stacks {
@@ -97,14 +100,20 @@
 
 #abt-resume {
   display: flex;
+  margin-top: 10px;
+  gap: 8px;
   width: 300px;
-  color: #8e59f7;
+  color: rgba(54, 36, 87, 0.849);
   font-weight: bold;
-  font-size: 18px;
+  font-size: 20px;
+}
+
+#abt-resume:hover {
+  color: #8e59f7;
 }
 
 .abt-hire {
-  background-color: #8e59f7;
+  background-color: rgba(54, 36, 87, 0.849);
   padding-top: 2px;
   border: 1px solid #fff;
   width: 90px;
@@ -115,6 +124,34 @@
   font-weight: 700;
 }
 
+.abt-hire:hover {
+  background-color: #8e59f7;
+}
+
 .abt-action {
   margin: 30px 50px;
+}
+
+@media (min-width: 780px) {
+  .offer-skills {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  #bck {
+    background-color: rgba(54, 36, 87, 0.849);
+  }
+
+  #bck:hover {
+    background-color: #8e59f7;
+  }
+
+  .abt-skills {
+    border-right: 2px solid #8e59f7;
+  }
+
+  .offer {
+    flex-direction: row;
+  }
 }

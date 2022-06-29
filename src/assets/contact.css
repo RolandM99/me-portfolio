@@ -5,8 +5,13 @@
 }
 
 .span-li {
-  padding: 3px 7px;
+  padding: 1.5px 5px;
   background-color: rgba(54, 36, 87, 0.849);
+  color: #ecf0fb8c;
+  border: 1px solid #8e59f7;
+}
+
+.span-li:hover {
   color: #8e59f7;
 }
 
@@ -19,7 +24,7 @@
   display: flex;
   gap: 7px;
   color: rgba(54, 36, 87, 0.849);
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .ctc-icons {
@@ -88,8 +93,20 @@ input {
   color: #ecf0fb8c;
 }
 
+.small-menu li a:hover {
+  color: #8e59f7;
+}
+
 .social-ctc li span {
  font-size: 20px;
+}
+
+.social-ctc li a {
+  color: #ecf0fb8c;
+}
+
+.social-ctc li a:hover {
+ color: #8e59f7;
 }
 
 .soc-footer {
@@ -100,4 +117,26 @@ input {
 .footer-all p {
   text-align: center;
   color: #ecf0fb8c;
+}
+
+.line3 {
+  background-color: #ecf0fb8c;
+  height: 2px;
+}
+
+@media (min-width: 780px) {
+  .ctc-container {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  form {
+    width: 120%;
+    margin-right: 150px;
+    margin-left: -40px;
+  }
+
+  .small-menu {
+    margin-left: 0px;
+  }
 }
