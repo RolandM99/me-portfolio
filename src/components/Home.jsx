@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { IconContext } from 'react-icons';
 import { bubble as Menu } from 'react-burger-menu';
-import avatar from '../assets/images/Ellipse.png';
+import avatar from '../assets/images/Pro1.png';
 import { FaAngellist } from 'react-icons/fa';
 import resume from '../assets/Resume.pdf';
 import { HashLink as Link } from 'react-router-hash-link';
@@ -14,9 +14,6 @@ import {
 import { HiOutlineDocumentDownload } from 'react-icons/hi';
 
 const Home = () => {
-  // showSettings (event) {
-  //   event.preventDefault();
-  // }
 
    const [isMenuOpen, setIsMenuOpen] = useState(false);
    const handleCloseMenu = () => {

@@ -57,6 +57,10 @@
   color: white;
 }
 
+.link-out:hover {
+  color: #2e273b70;
+}
+
 .icon-link {
   width: 20px;
   height: 20px;
