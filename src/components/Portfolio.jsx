@@ -53,9 +53,9 @@ const projects = [{
   id: 4,
   image: pro4,
   title: 'ARoZac Care',
-  description: 'a full-stack web application that can allow users to create an account, book an appointment with a doctor.',
-  source: 'https://github.com/rolandm99/react-redux-capstone',
-  demo: 'https://determined-aryabhata.netlify.app/',
+  description: 'a full-stack web application that can allow users to create an account, review doctors, and book an appointment with a doctor.',
+  source: 'https://github.com/ishimwezachee/Appointment-app-backend',
+  demo: 'https://github.com/ishimwezachee/Appointment-app-backend',
   techno: [
     {id: 1, stack: "ReactJs"},
     {id: 2, stack: "RoR"},
