@@ -7,8 +7,8 @@ import rails from '../assets/images/rails.png';
 import react from '../assets/images/react.png';
 import postgre from '../assets/images/postgre.png';
 import java from '../assets/images/java.png';
+import node from '../assets/images/node.js';
 import bootstrap from '../assets/images/bootstrap.png';
-import sass from '../assets/images/sass.png';
 import python from '../assets/images/python.png';
 import backend from '../assets/images/backend.png';
 import uiux from '../assets/images/uiux.png';
@@ -59,7 +59,7 @@ export default function About() {
             <li className="icon-li">Python<img className="icon-img" src={python} alt="ruby-icon"></img></li>
             <li className="icon-li">Java<img className="icon-img" src={java} alt="ruby-icon"></img></li>
             <li className="icon-li">Bootstrap<img className="icon-img" src={bootstrap} alt="ruby-icon"></img></li>
-            <li className="icon-li">Sass<img className="icon-img" src={sass} alt="ruby-icon"></img></li>
+            <li className="icon-li">NodeJs<img className="icon-img" src={node} alt="ruby-icon"></img></li>
            </ul>
           </div>
           </div>
