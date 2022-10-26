@@ -7,7 +7,7 @@ import rails from '../assets/images/rails.png';
 import react from '../assets/images/react.png';
 import postgre from '../assets/images/postgre.png';
 import java from '../assets/images/java.png';
-import node from '../assets/images/node.js';
+import node from '../assets/images/nodejs.png';
 import bootstrap from '../assets/images/bootstrap.png';
 import python from '../assets/images/python.png';
 import backend from '../assets/images/backend.png';
